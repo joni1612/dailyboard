@@ -4,9 +4,30 @@ import { FaBars } from "react-icons/fa";
 
 function Sidebar() {
   return (
-    <div className="Sidebar">
-      <FaBars />
-    </div>
+    <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
+      <Link to="/" className="navbar-brand">
+        DailyBoard
+      </Link>
+      <div className="collpase navbar-collapse">
+        <ul className="navbar-nav mr-auto">
+          <li className="navbar-item">
+            <Link to="/" className="nav-link">
+              Quote
+            </Link>
+          </li>
+          <li className="navbar-item">
+            <Link to="/image" className="nav-link">
+              Image
+            </Link>
+          </li>
+          <li className="navbar-item">
+            <Link to="/todo" className="nav-link">
+              DailyGoal{" "}
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </nav>
   );
 }
 

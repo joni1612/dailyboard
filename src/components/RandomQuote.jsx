@@ -27,7 +27,7 @@ class RandomQuote extends Component {
         <div className="row justify-content-md-center">
           <div className="col-md-6">
             <blockquote className="blockquote text-center">
-              <i className="d-inline  fa fa-quote-left  text-success" />
+              <i className="d-inline fa fa-quote-left  text-success" />
               <p className="d-inline mb-0  font-italic lead">
                 {this.state.quote.quote}
               </p>

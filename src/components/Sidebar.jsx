@@ -30,6 +30,11 @@ function Sidebar() {
               Weather
             </Link>
           </li>
+          <li className="navbar-item">
+            <Link to="/news" className="nav-link">
+              News
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>

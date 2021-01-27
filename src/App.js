@@ -7,6 +7,7 @@ import DailyImage from "./components/DailyImage";
 import Sidebar from "./components/Sidebar";
 import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 import Wetter from "./components/Wetter";
+import News from "./components/News";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/image" exact component={DailyImage} />
         <Route path="/todo" exact component={ToDoList} />
         <Route path="/weather" exact component={Wetter} />
+        <Route path="/news" exact component={News} />
       </div>
     </Router>
   );

@@ -25,6 +25,11 @@ function Sidebar() {
               DailyGoal{" "}
             </Link>
           </li>
+          <li className="navbar-item">
+            <Link to="/weather" className="nav-link">
+              Weather
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>

@@ -1,6 +1,6 @@
 import React from "react";
-import { Link, Route } from "react-router-dom";
-import { FaBars } from "react-icons/fa";
+import { Link } from "react-router-dom";
+
 
 function Sidebar() {
   return (
@@ -30,11 +30,11 @@ function Sidebar() {
               Weather
             </Link>
           </li>
-          <li className="navbar-item">
+          {/* <li className="navbar-item">
             <Link to="/news" className="nav-link">
               News
             </Link>
-          </li>
+          </li> */}
         </ul>
       </div>
     </nav>

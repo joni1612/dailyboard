@@ -30,6 +30,7 @@ function NewsCards(props) {
 
               <a
                 target="_blank"
+                rel="noreferrer"
                 href={newsItem.url}
                 className="btn btn-primary"
               >

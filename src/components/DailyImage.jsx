@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import ReactPlayer from "react-player";
 
 class DailyImage extends Component {
   constructor(props) {
@@ -9,16 +10,7 @@ class DailyImage extends Component {
     };
   }
 
-  getBase64 = (url) => {
-    return axios
-      .get(url, {
-        responseType: "arraybuffer",
-      })
-      .then((response) =>
-        Buffer.from(response.data, "binary").toString("base64")
-      )
-      .then((res) => console.log(res));
-  };
+
 
   componentDidMount() {
     axios
@@ -41,12 +33,20 @@ class DailyImage extends Component {
       <div className="container-fluid pt-4">
         <div className="row justify-content-md-center">
           <div className="col-l-6">
-            <figure class="figure ">
-              <img
-                src={this.state.description.url}
-                className="figure-img img-fluid rounded "
-                alt="A generic square placeholder image with rounded corners in a figure."
-              />
+            <figure className="figure ">
+              {this.state.description.media_type === "video" ? (
+                <ReactPlayer
+                  url={this.state.description.url}
+                  className="figure-img img-fluid rounded "
+                  alt="A generic square placeholder image with rounded corners in a figure."
+                />
+              ) : (
+                <img
+                  src={this.state.description.url}
+                  className="figure-img img-fluid rounded "
+                  alt={this.state.description.title}
+                />
+              )}
               <figcaption class="figure-caption">
                 {this.state.description.title}
               </figcaption>

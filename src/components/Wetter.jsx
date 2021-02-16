@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import thunderstorm from "../assets/thunderstorm.jpg";
 import clear from "../assets/clear.jpg";

@@ -17,10 +17,10 @@ function App() {
       </div>
       <div className="d-inline container-content">
         <br />
-        <Route path="/" exact component={RandomQuote} />
-        <Route path="/image" exact component={DailyImage} />
-        <Route path="/todo" exact component={ToDoList} />
-        <Route path="/weather" exact component={Wetter} />
+        <Route path="/dailyboard" exact component={RandomQuote} />
+        <Route path="/dailyboard/image" exact component={DailyImage} />
+        <Route path="/dailyboard/todo" exact component={ToDoList} />
+        <Route path="/dailyboard/weather" exact component={Wetter} />
         {/* <Route path="/news" exact component={News} /> */}
       </div>
     </Router>

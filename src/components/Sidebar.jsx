@@ -11,22 +11,22 @@ function Sidebar() {
       <div className="collpase navbar-collapse">
         <ul className="navbar-nav mr-auto">
           <li className="navbar-item">
-            <Link to="/" className="nav-link">
+            <Link to="/dailyboard" className="nav-link">
               Quote
             </Link>
           </li>
           <li className="navbar-item">
-            <Link to="/image" className="nav-link">
+            <Link to="/dailyboard/image" className="nav-link">
               Image
             </Link>
           </li>
           <li className="navbar-item">
-            <Link to="/todo" className="nav-link">
+            <Link to="/dailyboard/todo" className="nav-link">
               DailyGoal{" "}
             </Link>
           </li>
           <li className="navbar-item">
-            <Link to="/weather" className="nav-link">
+            <Link to="/dailyboard/weather" className="nav-link">
               Weather
             </Link>
           </li>

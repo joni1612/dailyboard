@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Sidebar() {
   return (
     <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
-      <Link to="/" className="navbar-brand">
+      <Link to="/dailyboard" className="navbar-brand">
         DailyBoard
       </Link>
       <div className="collpase navbar-collapse">

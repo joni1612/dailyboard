@@ -68,6 +68,8 @@ const Wetter = () => {
     }
   };
 
+  
+
   const apiCall = () => {
     axios
       .get(WEATHER_URL, {
@@ -95,6 +97,10 @@ const Wetter = () => {
     }
   };
 
+  const onClick = () => {
+      apiCall();
+  };
+
   return (
     <div>
       <div className="container">
@@ -112,6 +118,7 @@ const Wetter = () => {
                 onEnter(e);
               }}
             />
+            <button className="btn btn-primary form-control center-text" onClick={()=>{onClick()}}>Search</button>
           </div>
         </div>
       </div>
